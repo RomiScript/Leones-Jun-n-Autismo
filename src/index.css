@@ -116,3 +116,20 @@ a{
     margin-left: 15px;   
     margin-top: 10px;    
 }
+.contact-text {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 8px 0;
+}
+
+.icon-socials {
+ width: 20px;
+  height: 20px;
+}
+.icon-p {
+  display: flex;
+  align-items: center;  
+  gap: 8px;             
+  margin: 8px 0;
+}

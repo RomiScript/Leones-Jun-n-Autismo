@@ -5,6 +5,8 @@ import Nosotros from './assets/images/viamonte.jpg';
 import Actividades from './assets/images/actividades.jpg'
 import Carrera from './assets/images/aem.jpg'
 import ContactForm  from './Components/ContactForm';
+import IgIcon from './assets/images/ig-icon.avif'
+import FbIcon from './assets/images/facebook-icon.png'
 
 function App() {
   return (
@@ -71,8 +73,16 @@ function App() {
 
 <section>
   <footer className="footer">
-  <p>📧 Email: ejemplo@lautismojunin</p>
-  <p>📱 Teléfono: +54 236 4629006</p>
+    <h2>También podés contactarnos por acá:</h2>
+  <p className='contact-text'>📧 Email: juninautismo@gmail.com</p>
+  <p className='contact-text'>📱 Teléfono: +54 236 4629006</p>
+  <a href="https://www.instagram.com/leonesjuninautismo/?hl=en">
+  <p  className='icon-p'><img className='icon-socials' src={IgIcon} alt="logo-instagram"  width="20px"    />@leonesjuninautismo</p>
+  </a>
+
+  <a href="https://www.facebook.com/p/Club-de-Leones-Jun%C3%ADn-Autismo-61573146022450/" target='./blank'>
+  <p><img src={FbIcon} alt="facebook-icon" width="25px" /> Club de Leones Junín Autismo</p>
+  </a>
 </footer>
 
 </section>
