@@ -8,11 +8,13 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="nav-container">
+        <a href="https://www.lionsclubs.org/en">
         <img
           src={logo1}
           alt="Logo Club de Leones Junín-Autismo"
           className="nav-logo"
         />
+        </a>
 
         {/* ICONO HAMBURGUESA */}
         <div className="hamburger" onClick={() => setOpen(!open)}>
