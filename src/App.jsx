@@ -44,7 +44,7 @@ function App() {
       <section id="proyectos" className="section">
         <h2 className='proyectos-text'>Proyectos</h2>
         <p className='proyectos-text-p'>
-          Actualmente impulsamos “Autismo en Movimiento”, una carrera inclusiva que en su primera edición reunió a más de de 1200 personas corriendo, caminando, apoyando un evento que quedó para siempre en el corazón de Junín. Cada 4 de abril repetiremos esta experiencia única.
+          Actualmente impulsamos “Autismo en Movimiento”, una carrera inclusiva que en su primera edición reunió a más de de 1200 personas corriendo, caminando, apoyando un evento que quedó para siempre en el corazón de Junín. Cada 2 de abril repetiremos esta experiencia única.
 
             <a 
             className="btn-2" 
