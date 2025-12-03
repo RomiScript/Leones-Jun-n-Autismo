@@ -10,7 +10,7 @@ function Navbar() {
         <li><a href="#nosotros">Nosotros</a></li>
         <li><a href="#actividades">Actividades</a></li>
         <li><a href="#proyectos">Proyectos</a></li>
-        <li><a href="#area-reservada">Área reservada</a></li>
+      
         <li><a href="#contacto" className='btn'>Contacto</a></li>
       </ul>
     </nav>

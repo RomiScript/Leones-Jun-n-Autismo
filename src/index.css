@@ -37,3 +37,82 @@ a{
     width: 20px;
     margin-left: 10px;
 }
+.us-text {
+    text-align: center;
+    padding-bottom: 10px;
+
+}
+.us-text-p {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  color: #444;
+  max-width: 850px;
+  margin: 0 auto 2.5rem auto;
+  vertical-align: top;
+  flex: 1;
+}
+.us-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.proyectos-text {
+    text-align: center;
+    padding-bottom: 10px;
+
+    
+}
+.proyectos-text-p {
+
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #444;
+  max-width: 850px;
+  margin: 0 auto 2.5rem auto;
+
+}
+.proyectos-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    flex: 1;
+    padding-top: 5px;
+}
+
+.actividades {
+    text-align: center;
+}
+
+.text-actividades {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  color: #444;
+  max-width: 850px;
+  margin: 0 auto 2.5rem auto;
+  vertical-align: top;
+  flex: 1;
+}
+.actividades-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.btn-2 {
+    background: #212121;
+    color: white;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;   
+    margin-top: 10px;    
+}
