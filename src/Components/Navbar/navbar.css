@@ -1,31 +1,113 @@
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
-nav {
-    width: 100%;
-    
-    color: #fff;
-    padding: 4px 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 10;
-    background: rgba(0,0,0,0.6);
+/* ===== NAVBAR BASE ===== */
+
+.navbar {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(5px);
 }
-nav ul li {
-    display: inline-block;
-    list-style: none;
-    margin: 5px 20px;
-    font-size: 16px;
+
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-nav ul li a {
-  color: white;
+
+.nav-logo {
+  width: 180px;
+}
+
+/* ===== LINKS DESKTOP ===== */
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  align-items: center;
+}
+
+.nav-links li a {
+  color: #fff;
   text-decoration: none;
+  font-size: 16px;
 }
+
+/* BOTÓN CONTACTO */
+.btn-nav {
+  background: #212121;
+  padding: 8px 16px;
+  border-radius: 20px;
+}
+
+/* ====== HAMBURGUESA (oculta en desktop) ====== */
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: white;
+  border-radius: 2px;
+}
+
+/* ============================================
+   📱 MOBILE RESPONSIVE
+============================================ */
+
+@media (max-width: 768px) {
+  .nav-logo {
+    width: 150px;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    flex-direction: column;
+    padding: 20px 0;
+
+    display: none;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .btn-nav {
+    padding: 10px 25px;
+    font-size: 18px;
+  }
+}
+
+/* ====================
+SECTIONS
+==================== */
 
 .section {
   min-height: 100vh;
@@ -33,3 +115,4 @@ nav ul li a {
   background: #f4f4f4;
   color: #333;
 }
+
