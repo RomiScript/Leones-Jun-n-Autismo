@@ -2,7 +2,7 @@ import Navbar from './Components/Navbar/navbar';
 import Hero from './Components/Hero/Hero';
 //import Login from './Components/Login/Login';
 import Nosotros from './assets/images/viamonte.jpg';
-import Actividades from './assets/images/actividades.jpg'
+import Actividades from './assets/images/actividades.JPG'
 import Carrera from './assets/images/aem.jpg'
 import ContactForm  from './Components/ContactForm';
 import IgIcon from './assets/images/ig-icon.avif'
