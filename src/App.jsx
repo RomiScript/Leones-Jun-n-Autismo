@@ -18,7 +18,7 @@ function App() {
         <Hero />
       </section>
 
-    //
+    
 
       {/* Nosotros */}
       <section id="nosotros" className="section">
