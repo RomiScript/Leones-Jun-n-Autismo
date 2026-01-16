@@ -21,10 +21,21 @@
 
 /* ----- TITULO ----- */
 .hero-text h1 {
-  font-size: 40px;
+  font-size: 10px;
   font-weight: 600;
   line-height: 1.2;
   margin-bottom: 10px;
+  background-image:  linear-gradient(45deg, #FFFF00, #ff79cb, #82d0e5, #00ff00);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; 
+  animation: rainbow 5s ease infinite; 
+}
+@keyframes rainbow {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
 }
 
 /* ----- TEXTO ----- */
@@ -37,7 +48,7 @@
 
 /* ----- BOTÓN ----- */
 .btn {
-  background: #212121;
+  background: #bd41bd;
   color: white;
   padding: 12px 25px;
   font-size: 16px;
