@@ -8,7 +8,11 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="nav-container">
+<<<<<<< HEAD
         <a href="https://www.lionsclubs.org/en">
+=======
+        <a href="https://www.lionsclubs.org/en" target= "_blank">
+>>>>>>> cc070295d52deb479b5f83a6641721c02c8d6b29
         <img
           src={logo1}
           alt="Logo Club de Leones Junín-Autismo"
