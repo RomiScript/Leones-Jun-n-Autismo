@@ -63,7 +63,7 @@
 .countdown-number {
   font-size: 42px;
   font-weight: 700;
-  color: #db3eac; 
+  color: #46d6f7; 
   text-shadow: 0 2px 10px rgba(255, 255, 0, 0.5);
   line-height: 1;
   
@@ -138,7 +138,7 @@
 
 /* ----- BOTÓN ----- */
 .btn {
-  background: #bd41bd;
+  background: #54c3e8;
   color: white;
   padding: 12px 25px;
   font-size: 16px;
