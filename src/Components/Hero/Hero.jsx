@@ -8,7 +8,6 @@ import Infinito from '../../assets/images/infinito.png';
 export default function Hero() {
 
   const [isModalOpen, setIsModalOpen] = useState(false);
-<<<<<<< HEAD
 
   const targetDate = new Date('2026-04-02T09:00:00'); // <-- CAMBIÁ FECHA / HORA DEL EVENTO
 
@@ -30,18 +29,6 @@ export default function Hero() {
     };
   }
 
-=======
-  
-  //contador 
-  const [timeLeft, setTimeLeft] = useState({
-    days: 0,
-    hours: 0,
-    minutes: 0,
-    seconds: 0
-  });
-
-  //logica
->>>>>>> dc665048b8c17bd6e505b4809529d369aca16f6f
   useEffect(() => {
     const interval = setInterval(() => {
       setTimeLeft(getTimeRemaining());
@@ -53,7 +40,6 @@ export default function Hero() {
   const closeModal = () => setIsModalOpen(false);
 
   return (
-<<<<<<< HEAD
     <div className='hero'>
 
       {/* LOGOS */}
@@ -80,41 +66,6 @@ export default function Hero() {
 
         <button
           className="btn hero-cta"
-=======
-    <div className='hero container'>
-      <div className="hero-text">
-        <img className='hero-logo' src={Logo} alt="Logo Autismo en Movimiento" />
-        
-        {/* segundos */}
-        <div className="countdown">
-          <div className="countdown-item">
-            <span className="countdown-number">{timeLeft.days}</span>
-            <span className="countdown-label">Días</span>
-          </div>
-          <div className="countdown-separator">:</div>
-          <div className="countdown-item">
-            <span className="countdown-number">{timeLeft.hours}</span>
-            <span className="countdown-label">Horas</span>
-          </div>
-          <div className="countdown-separator">:</div>
-          <div className="countdown-item">
-            <span className="countdown-number">{timeLeft.minutes}</span>
-            <span className="countdown-label">Min</span>
-          </div>
-          <div className="countdown-separator">:</div>
-          <div className="countdown-item">
-            <span className="countdown-number">{timeLeft.seconds}</span>
-            <span className="countdown-label">Seg</span>
-          </div>
-        </div>
-        
-        <h2>Club de Leones Junín-Autismo presenta:</h2>
-        <h1>Autismo en movimiento</h1>
-        <h3>🏃🏽‍♀️‍➡️🚶🏽‍➡️👨🏽‍🦽‍➡️</h3>
-        <p>La segunda edición de la carrera inclusiva está llegando. Preparate para correr, caminar, trotar o desplazarte en este evento de inclusión en comunidad</p>
-        <button 
-          className="btn" 
->>>>>>> dc665048b8c17bd6e505b4809529d369aca16f6f
           onClick={() => setIsModalOpen(true)}
         >
           ¡Quiero participar! <img src={Icon} alt="Icono" />
