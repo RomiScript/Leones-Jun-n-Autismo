@@ -6,7 +6,7 @@ import Logo from '../../assets/images/logo.png';
 function Hero() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   
-  // ⏰ Countdown timer state (agregamos seconds)
+  //contador 
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
     hours: 0,
@@ -14,7 +14,7 @@ function Hero() {
     seconds: 0
   });
 
-  // ⏰ Countdown timer logic
+  //logica
   useEffect(() => {
     // 📅 FECHA DEL EVENTO: 2 de abril de 2026 a las 9 AM
     const targetDate = new Date('2026-04-02T09:00:00');
@@ -49,7 +49,7 @@ function Hero() {
       <div className="hero-text">
         <img className='hero-logo' src={Logo} alt="Logo Autismo en Movimiento" />
         
-        {/* ⏰ COUNTDOWN TIMER con segundos */}
+        {/* segundos */}
         <div className="countdown">
           <div className="countdown-item">
             <span className="countdown-number">{timeLeft.days}</span>
