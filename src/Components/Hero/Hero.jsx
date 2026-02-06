@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import './Hero.css';
 import Icon from '../../assets/images/icon2.png';
 import Logo from '../../assets/images/logo.png';
+import Junin from '../../assets/images/junin.png';
+import Infinito from '../../assets/images/infinito.png';
 
 function Hero() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -45,9 +47,11 @@ function Hero() {
   };
 
   return (
-    <div className='hero container'>
+    <div className='hero'>
       <div className="hero-text">
-        <img className='hero-logo' src={Logo} alt="Logo Autismo en Movimiento" />
+        <img src={Infinito} alt="Logo Infinito" className='hero-logo' />
+        <img  className='hero-logo' src={Logo} alt="" />
+        <img className='hero-logo' src={Junin} alt="Logo Autismo en Movimiento" />
         
         {/* ⏰ COUNTDOWN TIMER con segundos */}
         <div className="countdown">
@@ -72,9 +76,9 @@ function Hero() {
           </div>
         </div>
         
-        <h2>Club de Leones Junín-Autismo presenta:</h2>
+        <h2><em>Club de Leones Junín-Autismo presenta:</em></h2>
         <h1>Autismo en movimiento</h1>
-        <h3>🏃🏽‍♀️‍➡️🚶🏽‍➡️👨🏽‍🦽‍➡️</h3>
+        
         <p>La segunda edición de la carrera inclusiva está llegando. Preparate para correr, caminar, trotar o desplazarte en este evento de inclusión en comunidad</p>
         <button 
           className="btn" 
