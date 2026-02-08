@@ -9,7 +9,7 @@ export default function Hero() {
 
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const targetDate = new Date('2026-04-02T09:00:00'); // <-- CAMBIÁ FECHA / HORA DEL EVENTO
+  const targetDate = new Date('2026-04-02T09:00:00'); // 
 
   const [timeLeft, setTimeLeft] = useState(getTimeRemaining());
 

@@ -51,11 +51,67 @@ a{
   vertical-align: top;
   flex: 1;
 }
+
+/* ===========================================
+   🖼️ IMÁGENES DE REMERAS (LADO A LADO)
+=========================================== */
+.us-images-container {
+  display: flex;       /* ✨ Hace que las imágenes se alineen horizontalmente */
+  justify-content: center; /* ✨ Centra las imágenes */
+  align-items: center; /* ✨ Alinea verticalmente */
+  gap: 20px;           /* ✨ Espacio entre imágenes */
+  width: 100%;
+  margin-top: 20px;
+  flex-wrap: wrap;     /* ✨ Para que en móviles se apilen si es necesario */
+}
+
+.us-img-2 {
+  display: block;      /* ✨ Eliminamos inline-block (no funciona bien con flex) */
+  width: 45%;          /* ✨ 45% + 45% = 90% (deja espacio para el gap) */
+  height: auto;        /* ✨ Mantiene proporciones originales */
+  border-radius: 10px;
+  margin: 0;           /* ✨ Eliminamos los márgenes que rompían el diseño */
+}
+
+/* 📱 Responsive para móviles */
+@media (max-width: 768px) {
+  .us-images-container {
+    flex-direction: column; /* ✨ En móviles se apilan verticalmente */
+    align-items: center;
+  }
+  
+  .us-img-2 {
+    width: 80%; /* ✨ Más ancho en móvil */
+    margin-bottom: 15px;
+  }
+}
+
+/* ===========================================
+   🧹 OTROS AJUSTES (para evitar conflictos)
+=========================================== */
+.us-text-p {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  color: #444;
+  max-width: 850px;
+  margin: 0 auto 2.5rem auto;
+  vertical-align: top;
+  /* ✨ Eliminamos flex:1 (rompía el layout) */
+}
+
+/* 🖼️ Imágenes de Nosotros (ajuste menor) */
+.us-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin: 20px 0; /* ✨ Más espacio arriba/abajo */
+}
 .us-img {
     width: 100%;
     height: auto;
     border-radius: 10px;
 }
+
 .proyectos-text {
     text-align: center;
     padding-bottom: 10px;
@@ -115,6 +171,11 @@ a{
     justify-content: center;
     margin-left: 15px;   
     margin-top: 10px;    
+}
+.form {
+    text-align: center;
+    padding-bottom: 10px;
+    padding-left: 20px;
 }
 .contact-text {
     display: flex;

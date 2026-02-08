@@ -7,6 +7,8 @@ import Carrera from './assets/images/aem.JPG'
 import ContactForm  from './Components/ContactForm';
 import IgIcon from './assets/images/ig-icon.avif'
 import FbIcon from './assets/images/facebook-icon.png'
+import Reme1 from './assets/images/reme1.jpeg';
+import Reme2 from './assets/images/reme2.jpeg';
 
 function App() {
   return (
@@ -20,6 +22,26 @@ function App() {
 
     
 
+      {/* Remeras */}
+<section id="nosotros" className="section">
+  <h2 className='us-text'>Nuestra musculosa oficial</h2>
+  <p className='us-text-p'>
+    Te presentamos nuestra musculosa exclusiva de la segunda edición de "Autismo en Movimiento”, disponible con la inscripción premium. También la podés adquirir cuando quieras, es una excelente manera de apoyar nuestra misión.
+    El costo es de $20.000 y el 100% de lo recaudado se destina a financiar nuestros proyectos y actividades. Contactanos a través de nuestras redes sociales o por email para obtener más información sobre cómo adquirirla. ¡Gracias por tu apoyo!
+    
+    {/* ✨ CONTENEDOR PARA IMÁGENES LADO A LADO */}
+    <div className="us-images-container">
+      <img className='us-img-2' src={Reme1} alt="Remera 1" />
+      <img className='us-img-2' src={Reme2} alt="Remera 2" />
+    </div>
+  </p>
+</section>
+     
+     
+     
+     
+     
+     
       {/* Nosotros */}
       <section id="nosotros" className="section">
         <h2 className='us-text'>Nosotros</h2>
@@ -62,14 +84,11 @@ function App() {
  
 
       {/* Contacto */}
-     <section id="contacto" className="section">
+     <section id="contacto" className="form">
   <h2>Contacto</h2>
   <p>Ya sea que quieras conocernos, charlar, ser parte de nuestro Club o agendar una charla en tu ciudad, barrio, institución o evento, estamos acá. ¡Esperamos saber de vos pronto!</p>
   <ContactForm />
 </section>
-
-
-
 
 <section>
   <footer className="footer">
