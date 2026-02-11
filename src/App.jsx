@@ -10,15 +10,23 @@ import FbIcon from './assets/images/facebook-icon.png'
 import Reme1 from './assets/images/reme1.jpeg';
 import Reme2 from './assets/images/reme2.jpeg';
 
+import WhatsAppButton from './Components/WhatsAppButton';
+
 function App() {
   return (
     <div>
       <Navbar />
+      <WhatsAppButton />
+
+
 
       {/* Inicio */}
       <section id="inicio">
         <Hero />
       </section>
+       
+
+      
 
     
 
