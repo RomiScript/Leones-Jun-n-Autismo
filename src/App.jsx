@@ -92,17 +92,13 @@ function App() {
  
 
       {/* Contacto */}
-     <section id="contacto" className="form">
-  <h2>Contacto</h2>
-  <p>Ya sea que quieras conocernos, charlar, ser parte de nuestro Club o agendar una charla en tu ciudad, barrio, institución o evento, estamos acá. ¡Esperamos saber de vos pronto!</p>
-  <ContactForm />
-</section>
+
 
 <section>
   <footer className="footer">
-    <h2>También podés contactarnos por acá:</h2>
+    <h2>¡Contactanos, nos encantaría saber de vos!</h2>
   <p className='contact-text'>📧 Email: juninautismo@gmail.com</p>
-  <p className='contact-text'>📱 Teléfono: +54 236 4629006</p>
+  
   <a href="https://www.instagram.com/leonesjuninautismo/?hl=en">
   <p  className='icon-p'><img className='icon-socials' src={IgIcon} alt="logo-instagram"  width="20px"    />@leonesjuninautismo</p>
   </a>
