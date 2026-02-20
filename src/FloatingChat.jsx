@@ -49,7 +49,7 @@ export default function FloatingChat() {
         <div className="chat-window">
           <div className="chat-header">
             
-            <span>Hola, soy Leia 👩🏽‍💻. Tu asistente virtual 24 hs.</span>
+            <span>Hola, soy Leia 👩🏽‍💻. </span><h2>Tu asistente virtual 24hs.</h2>
 
             <span onClick={() => setIsOpen(false)}>✖</span>
           </div>
