@@ -1,10 +1,6 @@
-export default async function handler(req, res) {
-  if (req.method !== "POST") {
-    return res.status(405).json({ error: "Method not allowed" });
-  }
-
+export async function POST(req) {
   try {
-    const { messages } = req.body;
+    const { message } = await req.json();
 
     const response = await fetch("https://api.openai.com/v1/chat/completions", {
       method: "POST",
@@ -14,14 +10,29 @@ export default async function handler(req, res) {
       },
       body: JSON.stringify({
         model: "gpt-4o-mini",
-        messages,
+        messages: [
+          {
+            role: "system",
+            content:
+              "Sos Leia, asistente virtual de Junín Autismo. Respondé de manera clara, cálida y profesional sobre autismo y leonismo.",
+          },
+          { role: "user", content: message },
+        ],
       }),
     });
 
     const data = await response.json();
 
-    res.status(200).json(data);
+    const reply = data.choices[0].message.content;
+
+    return new Response(JSON.stringify({ reply }), {
+      status: 200,
+      headers: { "Content-Type": "application/json" },
+    });
   } catch (error) {
-    res.status(500).json({ error: "Something went wrong" });
+    return new Response(
+      JSON.stringify({ error: "Error en el servidor" }),
+      { status: 500 }
+    );
   }
 }
