@@ -2,18 +2,23 @@
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background: #7bcdc1;
-  color: white;
-  width: 60px;
-  height: 60px;
+  width: 65px;
+  height: 65px;
   border-radius: 50%;
+  background: linear-gradient(135deg, #7bcdc1, #5c7c77);
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 24px;
+  font-size: 30px;
   cursor: pointer;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
   z-index: 1000;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.chat-button:hover {
+  transform: scale(1.08);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
 }
 
 .chat-window {
@@ -32,12 +37,14 @@
 }
 
 .chat-header {
-  background: #5c7c77;
+  background: linear-gradient(135deg, #5c7c77, #3f5f5a);
   color: white;
-  padding: 12px;
+  padding: 14px;
   display: flex;
   justify-content: space-between;
-  font-weight: 500;
+  align-items: center;
+  font-weight: 600;
+  font-size: 14px;
 }
 
 .chat-messages {
