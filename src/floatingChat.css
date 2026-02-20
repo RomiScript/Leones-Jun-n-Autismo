@@ -46,6 +46,9 @@
   font-weight: 600;
   font-size: 14px;
 }
+.close {
+  cursor: pointer;
+}
 
 .chat-messages {
   flex: 1;

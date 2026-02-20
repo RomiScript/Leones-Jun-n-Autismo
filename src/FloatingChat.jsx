@@ -53,7 +53,7 @@ export default function FloatingChat() {
             <span>¡Hablemos de autismo y Leonismo cuando quieras!.</span>
 
 
-            <span onClick={() => setIsOpen(false)}>✖</span>
+            <span onClick={() => setIsOpen(false)} className="close">✖</span>
           </div>
 
           <div className="chat-messages">
