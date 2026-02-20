@@ -2,7 +2,7 @@
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background: #5c7c77;
+  background: #7bcdc1;
   color: white;
   width: 60px;
   height: 60px;
@@ -80,7 +80,7 @@
 }
 
 .chat-input button {
-  background: #5c7c77;
+  background: #288577;
   color: white;
   border: none;
   padding: 10px 15px;

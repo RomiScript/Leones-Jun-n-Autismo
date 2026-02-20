@@ -38,14 +38,16 @@ export default function FloatingChat() {
     <>
       {/* Botón flotante */}
       <div className="chat-button" onClick={() => setIsOpen(!isOpen)}>
-        💬
+        🦁♾️
       </div>
 
       {/* Ventana */}
       {isOpen && (
         <div className="chat-window">
           <div className="chat-header">
-            Asistente Junín Autismo
+            <h1>Hola, soy Leia 👩🏽‍💻</h1>
+            <h2>Asistente virtual de Junín-Autismo, ¡preguntá lo que quieras!</h2>
+
             <span onClick={() => setIsOpen(false)}>✖</span>
           </div>
 
