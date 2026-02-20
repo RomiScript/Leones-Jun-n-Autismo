@@ -6,7 +6,8 @@ export async function POST(req) {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearer ${process.env.OPENAI_API_KEY}`,
+        // eslint-disable-next-line no-undef
+        Authorization: `Bearer ${process.env.OPENAI_API_KEY ?? ""}`,
       },
       body: JSON.stringify({
         model: "gpt-4o-mini",
@@ -29,6 +30,7 @@ export async function POST(req) {
       status: 200,
       headers: { "Content-Type": "application/json" },
     });
+  // eslint-disable-next-line no-unused-vars
   } catch (error) {
     return new Response(
       JSON.stringify({ error: "Error en el servidor" }),
