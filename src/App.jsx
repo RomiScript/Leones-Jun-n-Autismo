@@ -17,6 +17,8 @@ function App() {
     <div>
       <Navbar />
       <WhatsAppButton />
+      <Chat />
+      <FloatingChat />
 
 
 
