@@ -5,7 +5,7 @@ import Nosotros from './assets/images/viamonte.jpg';
 import Actividades from './assets/images/actividades.jpg'
 import Carrera from './assets/images/aem.JPG'
 
-import FloatingChat from '../src/FloatingChat';
+
 import IgIcon from './assets/images/ig-icon.avif'
 import FbIcon from './assets/images/facebook-icon.png'
 import Reme1 from './assets/images/reme1.jpeg';
@@ -19,7 +19,7 @@ function App() {
       <Navbar />
       <WhatsAppButton />
       
-      <FloatingChat />
+      
 
 
 
