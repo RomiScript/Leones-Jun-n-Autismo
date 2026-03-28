@@ -112,7 +112,7 @@ export default function Hero() {
 
             <div className="registration-options">
 
-              {/* ESTÁNDAR ADULTOS */}
+              {/* ESTÁNDAR ADULTOS 
               <div className="option">
                 <h3>Estándar Adultos</h3>
                 <h4 className='text-option'>Incluye:</h4>
@@ -127,7 +127,7 @@ export default function Hero() {
                 <a href="https://forms.gle/GJ3TCPVGsQAn7nWq9" className="option-btn" target='_blank' rel="noopener noreferrer">
                   Inscribirse
                 </a>
-              </div>
+              </div> */}
 
               {/* ESTÁNDAR KIDS */}
               <div className="option">

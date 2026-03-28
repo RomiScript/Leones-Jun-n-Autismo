@@ -40,7 +40,7 @@ function App() {
     Te presentamos nuestra musculosa exclusiva de la segunda edición de "Autismo en Movimiento”, disponible con la inscripción premium. También la podés adquirir cuando quieras, es una excelente manera de apoyar nuestra misión.
     El costo es de $20.000 y el 100% de lo recaudado se destina a financiar nuestros proyectos y actividades. Contactanos a través de nuestras redes sociales o por email para obtener más información sobre cómo adquirirla. ¡Gracias por tu apoyo!
     
-    {/* ✨ CONTENEDOR PARA IMÁGENES LADO A LADO */}
+    {/* CONTENEDOR PARA IMÁGENES LADO A LADO */}
     <div className="us-images-container">
       <img className='us-img-2' src={Reme1} alt="Remera 1" />
       <img className='us-img-2' src={Reme2} alt="Remera 2" />
