@@ -146,7 +146,7 @@ export default function Hero() {
                 </a>
               </div>
 
-              {/* PREMIUM */}
+              {/* PREMIUM 
               <div className="option">
                 <h3>Premium</h3>
                 <h4 className='text-option'>Incluye:</h4>
@@ -162,7 +162,7 @@ export default function Hero() {
                 <a href="https://forms.gle/FSt5TnKePqiVRqg89" className="option-btn" target='_blank' rel="noopener noreferrer">
                   Inscribirse
                 </a>
-              </div>
+              </div> */}
 
             </div>
 
