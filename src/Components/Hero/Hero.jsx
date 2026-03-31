@@ -68,7 +68,7 @@ export default function Hero() {
           className="btn hero-cta"
           onClick={() => setIsModalOpen(true)}
         >
-          ¡Quiero participar! <img src={Icon} alt="Icono" />
+          ¡Cupos Agotados! <img src={Icon} alt="Icono" />
         </button>
 
         {/* COUNTDOWN */}
