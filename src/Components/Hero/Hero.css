@@ -1,276 +1,56 @@
-/* =========================
-   HERO BASE
-========================= */
-
 .hero {
-  width: 100%;
-  min-height: 100vh;
-
-  /* Overlay profesional con foco central */
-  background:
-    linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.75) 0%,
-      rgba(0, 0, 0, 0.55) 40%,
-      rgba(0, 0, 0, 0.75) 100%
-    ),
-    url('../../assets/images/hero.JPG');
-
-  background-size: cover;
-  background-position: center;
-
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 40px 20px;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(4, 3, 11, 0.7), rgba(43, 38, 75, 0.7)), url('../../assets/images/hero.JPG');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-/* =========================
-   LOGOS
-========================= */
-
-.hero-logos {
-  display: flex;
-  gap: 30px;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 25px;
-  opacity: 0.9;
+.hero-text {
+    text-align: center;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;        /* <-- esto separa todos los elementos entre sí */
+    padding: 40px 20px;
 }
 
-.hero-logo {
-  width: 85px;
-  object-fit: contain;
+.hero-text h1 {
+    font-size: 50px;
+    font-weight: 600;
+    margin: 0;
 }
 
-/* =========================
-   CONTENIDO CENTRAL
-========================= */
-
-.hero-content {
-  text-align: center;
-  max-width: 720px;
+.hero-text h2 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin: 0;
 }
 
-/* Pretitle */
-.hero-pretitle {
-  font-size: 18px;
-  opacity: 0.85;
-  margin-bottom: 8px;
+.hero-text p {
+    max-width: 700px;
+    margin: 0;
+    line-height: 1.6;
+    opacity: 0.9;
 }
 
-/* Título principal — FOCO */
-.hero-title {
-  font-size: 52px;
-  font-weight: 700;
-  line-height: 1.1;
-  margin-bottom: 14px;
-  color: #4fd1ff;
-  text-shadow: 0 0 18px rgba(79, 209, 255, 0.35);
+.btn {
+    padding: 14px 32px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+    
+   
 }
 
-/* Texto descriptivo */
-.hero-description {
-  max-width: 640px;
-  margin: 0 auto 22px;
-  line-height: 1.5;
-  font-size: 18px;
-  opacity: 0.92;
-}
-
-/* =========================
-   CTA — AHORA PROTAGONISTA
-========================= */
-
-.hero-cta {
-  background: #4fd1ff;
-  color: rgb(45, 45, 48);
-  padding: 16px 38px;
-  font-size: 17px;
-  border-radius: 40px;
-  border: none;
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-
-  box-shadow: 0 8px 25px rgba(79, 209, 255, 0.35);
-  transition: all 0.2s ease;
-}
-
-.hero-cta:hover {
-  transform: scale(1.04);
-  background: #62dbff;
-}
-
-/* =========================
-   COUNTDOWN — INTEGRADO
-========================= */
-
-.countdown {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 18px;
-
-  margin-top: 28px;
-
-  /* Glassmorphism real */
-  background: rgba(0, 0, 0, 0.35);
-  backdrop-filter: blur(8px);
-  border-radius: 14px;
-  padding: 16px 26px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-.countdown-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-width: 70px;
-}
-
-.countdown-number {
-  font-size: 44px;
-  font-weight: 700;
-  color: #4fd1ff;
-  line-height: 1;
-  letter-spacing: 1px;
-}
-
-.countdown-label {
-  font-size: 13px;
-  margin-top: 6px;
-  opacity: 0.75;
-  text-transform: uppercase;
-}
-
-.countdown-separator {
-  font-size: 28px;
-  opacity: 0.6;
-}
-
-/* =========================
-   MODAL 
-========================= */
-
-.modal-overlay {
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.7);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-  overflow-y: auto;
-  padding: 20px;
-}
-
-.modal-content {
-  background: rgb(29, 25, 41);
-  padding: 2rem;
-  border-radius: 10px;
-  max-width: 80%;
-  width: 500px;
-  max-height: 90vh;
-  overflow-y: auto;
-}
-
-.registration-options {
-  display: grid;
-  gap: 1.4rem;
-  margin: 1.5rem 0;
-}
-
-.option {
-  border: 1px solid #ddd;
-  padding: 1.2rem;
-  border-radius: 8px;
-}
-
-.option h3 {
-  margin-bottom: 6px;
-  color: #2c3e50;
-}
-
-.price {
-  font-weight: bold;
-  color: #379fdf;
-  margin: 6px 0;
-}
-
-.option-btn {
-  display: inline-block;
-  background: #31a7d1;
-  color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.close-btn {
-  background: #e74c3c;
-  color: white;
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: bold;
-  margin-top: 1rem;
-}
-
-/* =========================
-   RESPONSIVE
-========================= */
-
-@media (max-width: 768px) {
-
-  .hero {
-    padding: 30px 18px;
-  }
-
-  .hero-title {
-    font-size: 36px;
-  }
-
-  .hero-description {
-    font-size: 16px;
-  }
-
-  .hero-cta {
-    font-size: 15px;
-    padding: 14px 26px;
-  }
-
-  .countdown {
-    flex-wrap: wrap;
-    gap: 10px;
-    padding: 14px;
-  }
-
-  .countdown-separator {
-    display: none;
-  }
-
-  .countdown-number {
-    font-size: 32px;
-  }
-}
-
-@media (min-width: 1200px) {
-
-  .hero-title {
-    font-size: 64px;
-  }
-
-  .hero-description {
-    font-size: 20px;
-  }
-
-  .countdown-number {
-    font-size: 52px;
-  }
+.btn:hover {
+    background: #fff;
+    color: #000;
 }

@@ -1,9 +1,20 @@
 import { useState } from "react";
 import "./navbar.css";
 import logo1 from "../../assets/images/logo1.png";
+import { Link, useNavigate } from "react-router-dom";
 
 function Navbar() {
   const [open, setOpen] = useState(false);
+  const navigate = useNavigate();
+
+  const irA = (seccion) => {
+    setOpen(false);
+    navigate("/");
+    setTimeout(() => {
+      const el = document.getElementById(seccion);
+      if (el) el.scrollIntoView({ behavior: "smooth" });
+    }, 100);
+  };
 
   return (
     <nav className="navbar">
@@ -16,7 +27,6 @@ function Navbar() {
           />
         </a>
 
-        {/* ICONO HAMBURGUESA */}
         <div className="hamburger" onClick={() => setOpen(!open)}>
           <span></span>
           <span></span>
@@ -24,11 +34,11 @@ function Navbar() {
         </div>
 
         <ul className={open ? "nav-links open" : "nav-links"}>
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#nosotros">Nosotros</a></li>
-          <li><a href="#actividades">Actividades</a></li>
-          <li><a href="#proyectos">Proyectos</a></li>
-          <li><a href="#contacto" className="btn-nav">Contacto</a></li>
+          <li><button onClick={() => irA("inicio")}>Inicio</button></li>
+          <li><button onClick={() => irA("nosotros")}>Nosotros</button></li>
+          <li><button onClick={() => irA("actividades")}>Actividades</button></li>
+          <li><button onClick={() => irA("proyectos")}>Autismo en Movimiento</button></li>
+          <li><button onClick={() => irA("contacto")} className="btn-nav">Contacto</button></li>
         </ul>
       </div>
     </nav>
