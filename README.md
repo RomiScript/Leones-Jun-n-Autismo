@@ -1,12 +1,35 @@
-# React + Vite
+# Lions Web - Club de Leones Junín Autismo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Proyecto Oficial del Club de Leones Junín Autismo
 
-Currently, two official plugins are available:
+Este proyecto es una aplicación web moderna desarrollada con **React** para la comunidad del Club de Leones de Junín. Centraliza la información institucional y gestiona el evento anual de la carrera inclusiva "Autismo en Movimiento".
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Características Principales
 
-## Expanding the ESLint configuration
+-   **Galería de Alto Rendimiento:** Integración con **Cloudinary** para la gestión de +200 imágenes, utilizando transformaciones dinámicas para optimizar la carga y permitir descargas directas.
+    
+-   **Modo Evento:** Sistema de cuenta regresiva (días, minutos, segundos) que se activa dinámicamente para las fechas de la carrera. 8en su versión para la carrera inclusiva Autismo en Movimiento")
+    
+-   **Experiencia de Usuario (UX):**
+    
+    -   Navegación fluida con **React Router**.
+        
+    -   Interfaz responsiva con **CSS puro** (minimalista e industrial).
+        
+    -   Ventanas modales informativas y Lightbox interactivo para fotos.
+        
+-   **SEO & Branding:** Estética cuidada con enfoque en la accesibilidad e inclusión.
+    
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Stack Tecnológico
+
+-   **Frontend:** React.js, JavaScript (ES6+).
+    
+-   **Estilos:** CSS3 (Custom Properties, Flexbox, Grid).
+    
+-   **Asset Management:** Cloudinary (CDN & Optimización de imágenes).
+    
+-   **Herramientas:** Vite, Git, GitHub.
+
+
+
