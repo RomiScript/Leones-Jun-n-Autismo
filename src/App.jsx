@@ -1,119 +1,99 @@
 import Navbar from './Components/Navbar/navbar';
 import Hero from './Components/Hero/Hero';
-//import Login from './Components/Login/Login';
 import Nosotros from './assets/images/viamonte.jpg';
 import Actividades from './assets/images/actividades.jpg'
 import Carrera from './assets/images/aem.JPG'
-
-
+import Galeria from './Components/Galeria';
 import IgIcon from './assets/images/ig-icon.avif'
 import FbIcon from './assets/images/facebook-icon.png'
 import Reme1 from './assets/images/reme1.jpeg';
 import Reme2 from './assets/images/reme2.jpeg';
-
-import WhatsAppButton from './Components/WhatsAppButton';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <div>
-      <Navbar />
-      <WhatsAppButton />
-      
-      
+    <BrowserRouter>
+      <div>
+        <Navbar />
 
+        <Routes>
 
+          <Route path="/" element={
+            <>
+              <section id="inicio">
+                <Hero />
+              </section>
 
-      {/* Inicio */}
-      <section id="inicio">
-        <Hero />
-      </section>
-       
+              <section id="nosotros" className="section">
+                <h2 className='us-text'>Nuestra musculosa oficial</h2>
+                <p className='us-text-p'>
+                  Te presentamos nuestra musculosa exclusiva de la segunda edición de "Autismo en Movimiento", disponible con la inscripción premium. También la podés adquirir cuando quieras, es una excelente manera de apoyar nuestra misión.
+                  El costo es de $20.000 y el 100% de lo recaudado se destina a financiar nuestros proyectos y actividades. Contactanos a través de nuestras redes sociales o por email para obtener más información sobre cómo adquirirla. ¡Gracias por tu apoyo!
+                  <div className="us-images-container">
+                    <img className='us-img-2' src={Reme1} alt="Remera 1" />
+                    <img className='us-img-2' src={Reme2} alt="Remera 2" />
+                  </div>
+                </p>
+              </section>
 
-      
+              <section id="nosotros" className="section">
+                <h2 className='us-text'>Nosotros</h2>
+                <p className='us-text-p'>
+                  Somos un club especializado en autismo, parte de Lions International, la organización de ayuda más grande del mundo. Acercamos nuestro mensaje a la sociedad, soñamos con una sociedad accesible.
+                  <img className='us-img' src={Nosotros} alt="" width="100%" height="500px" />
+                </p>
+              </section>
 
-    
+              <section id="actividades" className="actividades">
+                <h2>Actividades</h2>
+                <p className='text-actividades'>
+                  Organizamos eventos, talleres y charlas para promover la conciencia y el apoyo en la comunidad. Podés contactarnos para recibir una charla en tu ciudad, institución o empresa. Nuestros aportes, experiencias y servicio son 100% gratuitos.
+                  <img className='actividades-img' src={Actividades} alt="" />
+                </p>
+              </section>
 
-      {/* Remeras */}
-<section id="nosotros" className="section">
-  <h2 className='us-text'>Nuestra musculosa oficial</h2>
-  <p className='us-text-p'>
-    Te presentamos nuestra musculosa exclusiva de la segunda edición de "Autismo en Movimiento”, disponible con la inscripción premium. También la podés adquirir cuando quieras, es una excelente manera de apoyar nuestra misión.
-    El costo es de $20.000 y el 100% de lo recaudado se destina a financiar nuestros proyectos y actividades. Contactanos a través de nuestras redes sociales o por email para obtener más información sobre cómo adquirirla. ¡Gracias por tu apoyo!
-    
-    {/* CONTENEDOR PARA IMÁGENES LADO A LADO */}
-    <div className="us-images-container">
-      <img className='us-img-2' src={Reme1} alt="Remera 1" />
-      <img className='us-img-2' src={Reme2} alt="Remera 2" />
-    </div>
-  </p>
-</section>
-     
-     
-     
-     
-     
-     
-      {/* Nosotros */}
-      <section id="nosotros" className="section">
-        <h2 className='us-text'>Nosotros</h2>
-        <p className='us-text-p'>
-         Somos un club especializado en autismo, parte de Lions International, la organización de ayuda más grande del mundo. Acercamos nuestro mensaje a la sociedad, soñamos con una sociedad accesible.
+              <section id="proyectos" className="section">
+                <h2 className='proyectos-text'>Proyectos</h2>
+                <p className='proyectos-text-p'>
+                  Actualmente impulsamos "Autismo en Movimiento", una carrera inclusiva que en su primera edición reunió a más de de 1200 personas corriendo, caminando, apoyando un evento que quedó para siempre en el corazón de Junín. Cada 2 de abril repetiremos esta experiencia única.
+                  
+                  <a
+                    className="btn-2"
+                    target="_blank"
+                    href='https://photos.app.goo.gl/C33xSPdHHhiVVJTF9'
+                    rel="noopener noreferrer"
+                  >
+                    Ver fotos de la primera edición
+                  </a>
+                  <img src={Carrera} alt="" className='proyectos-img' />
+                </p>
+              </section>
 
-          <img className='us-img'  src={Nosotros} alt="" width="100%" height="500px" />
+              <section>
+                <footer className="footer">
+                  <h2>¡Contactanos, nos encantaría saber de vos!</h2>
+                  <p className='contact-text'>📧 Email: juninautismo@gmail.com</p>
+                  <a href="https://www.instagram.com/leonesjuninautismo/?hl=en">
+                    <p className='icon-p'>
+                      <img className='icon-socials' src={IgIcon} alt="logo-instagram" width="20px" />
+                      @leonesjuninautismo
+                    </p>
+                  </a>
+                  <a href="https://www.facebook.com/p/Club-de-Leones-Jun%C3%ADn-Autismo-61573146022450/" target='./blank'>
+                    <p>
+                      <img src={FbIcon} alt="facebook-icon" width="25px" /> Club de Leones Junín Autismo
+                    </p>
+                  </a>
+                </footer>
+              </section>
+            </>
+          } />
 
-        </p>
-      </section>
+          <Route path="/galeria" element={<Galeria />} />
 
-      {/* Actividades */}
-      <section id="actividades" className="actividades">
-        <h2>Actividades</h2>
-        <p className='text-actividades'>
-          Organizamos eventos, talleres y charlas para promover la conciencia y el apoyo en la comunidad. Podés contactarnos para recibir una charla en tu ciudad, institución o empresa. Nuestros aportes, experiencias y servicio son 100% gratuitos.
-          <img  className='actividades-img' src={Actividades} alt="" />
-        </p>
-      </section>
-
-      {/* Proyectos */}
-      <section id="proyectos" className="section">
-        <h2 className='proyectos-text'>Proyectos</h2>
-        <p className='proyectos-text-p'>
-          Actualmente impulsamos “Autismo en Movimiento”, una carrera inclusiva que en su primera edición reunió a más de de 1200 personas corriendo, caminando, apoyando un evento que quedó para siempre en el corazón de Junín. Cada 2 de abril repetiremos esta experiencia única.
-
-            <a 
-            className="btn-2" 
-             
-            target="_blank" 
-            href='https://photos.app.goo.gl/C33xSPdHHhiVVJTF9'
-            rel="noopener noreferrer"
-          >
-            Ver galería
-          </a>
-          <img src={Carrera} alt=""  className='proyectos-img'/>
-        </p>
-      </section>
-
- 
-
-      {/* Contacto */}
-
-
-<section>
-  <footer className="footer">
-    <h2>¡Contactanos, nos encantaría saber de vos!</h2>
-  <p className='contact-text'>📧 Email: juninautismo@gmail.com</p>
-  
-  <a href="https://www.instagram.com/leonesjuninautismo/?hl=en">
-  <p  className='icon-p'><img className='icon-socials' src={IgIcon} alt="logo-instagram"  width="20px"    />@leonesjuninautismo</p>
-  </a>
-
-  <a href="https://www.facebook.com/p/Club-de-Leones-Jun%C3%ADn-Autismo-61573146022450/" target='./blank'>
-  <p><img src={FbIcon} alt="facebook-icon" width="25px" /> Club de Leones Junín Autismo</p>
-  </a>
-</footer>
-
-</section>
-     
-    </div>
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 
