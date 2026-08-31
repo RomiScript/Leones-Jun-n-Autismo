@@ -11,7 +11,7 @@ function Hero() {
       <div className="hero-text">
         <h1>Club de Leones Junín-Autismo</h1>
         <img src={Logo} alt="" width='200'  />
-        <h2>Incluyendo, sirviendo, creciendo.</h2>
+        <h2>El servicio nos une, la inclusión nos mueve.</h2>
         <Link to="/galeria" className='btn'>
         Galería Autismo en Movimiento Segunda Edición
         </Link>
